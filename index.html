@@ -2,15 +2,14 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Portfólio Maria</title>
+  <title>Portfólio Maria Clara Avanci</title>
   <style>
-    /* Fonte mais séria: Merriweather para títulos e Roboto para textos */
+    /* Fonte séria */
     @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto&display=swap');
 
     body {
-      /* Fundo rosa pastel com degradê suave */
-      background: linear-gradient(135deg, #ffe6f0, #ffd9e8, #ffe0ed);
-      color: #333; /* texto padrão escuro para contraste */
+      background-color: #ffffff; /* fundo branco */
+      color: #333;
       font-family: 'Roboto', sans-serif;
       text-align: center;
       margin: 0;
@@ -22,7 +21,7 @@
       height: 180px;
       object-fit: cover;
       border-radius: 50%;
-      border: 4px solid rgba(255,255,255,0.6);
+      border: 4px solid rgba(0,0,0,0.1);
       margin-bottom: 20px;
       box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     }
@@ -31,7 +30,7 @@
       font-family: 'Merriweather', serif;
       font-size: 3em;
       margin-bottom: 10px;
-      color: #444;
+      color: #222;
     }
 
     h2 {
@@ -42,13 +41,14 @@
       border-bottom: 2px solid rgba(200,200,200,0.5);
       padding-bottom: 5px;
       display: inline-block;
+      color: #222;
     }
 
     h3 {
       font-family: 'Merriweather', serif;
       font-size: 1.3em;
       margin-top: 15px;
-      color: #555;
+      color: #444;
     }
 
     p {
@@ -64,13 +64,13 @@
     }
 
     .box {
-      background-color: rgba(255,255,255,0.3);
+      background-color: rgba(0,0,0,0.05);
       padding: 30px;
       border-radius: 25px;
       margin: 25px auto;
       max-width: 750px;
       text-align: left;
-      box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+      box-shadow: 0 6px 25px rgba(0,0,0,0.05);
       transition: transform 0.3s;
     }
 
@@ -79,7 +79,7 @@
     }
 
     a {
-      color: #fff; /* email em branco */
+      color: #333;
       text-decoration: none;
       font-weight: bold;
     }
@@ -99,8 +99,26 @@
       margin-bottom: 20px;
     }
 
+    .certificates {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .certificates img {
+      width: 140px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid rgba(0,0,0,0.1);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+
     @media(max-width: 700px){
       .skills-box { flex: 0 0 100%; }
+      .certificates img { width: 45%; height: auto; }
     }
 
   </style>
@@ -108,17 +126,17 @@
 <body>
 
   <!-- FOTO -->
-  <img src="foto.jpg" alt="Foto Maria">
+  <img src="foto.jpg" alt="Foto Maria Clara Avanci">
 
   <!-- NOME -->
-  <h1>Maria</h1>
+  <h1>Maria Clara Avanci</h1>
   <p>Graduanda em tecnologia</p>
 
   <!-- BIO -->
   <div class="box">
     <h2>Sobre Mim</h2>
     <p>
-      Olá! Sou Maria, apaixonada por inovação e aprendizado contínuo.  
+      Olá! Sou Maria Clara Avanci, apaixonada por inovação e aprendizado contínuo.  
       Busco aprimorar minhas habilidades em desenvolvimento, análise de dados e gestão de projetos,  
       combinando conhecimento técnico e visão prática para entregar soluções eficientes e impactantes.  
       Sou colaborativa, proativa e comprometida, sempre focada em crescimento pessoal e profissional.
@@ -151,6 +169,18 @@
     </div>
   </div>
 
+  <!-- CERTIFICADOS -->
+  <div class="box">
+    <h2>Algumas das minhas certificações</h2>
+    <div class="certificates">
+      <img src="ESTRATÉGIA_EMPRESARIAL_NA_GESTÃO_DAS_ORGANIZAÇÕES_(CURSO_GRATUITO)-Declaração_30885_page-0001.jpg" alt="Certificação 1">
+      <img src="Certificado.jpg.jpeg" alt="Certificação 2">
+      <img src="39791867df150f8c649f185e2af36dcc.png.jpeg" alt="Certificação 3">
+      <img src="Certificado.jpg" alt="Certificação 4">
+      <!-- se quiser adicionar a quinta, coloque aqui -->
+    </div>
+  </div>
+
   <!-- CONTATO -->
   <div class="box">
     <h2>Contato</h2>
@@ -159,3 +189,4 @@
 
 </body>
 </html>
+     
