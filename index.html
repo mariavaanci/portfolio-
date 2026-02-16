@@ -16,7 +16,7 @@
       padding: 50px 20px;
     }
 
-    img {
+    img.profile {
       width: 180px;
       height: 180px;
       object-fit: cover;
@@ -51,10 +51,19 @@
       color: #444;
     }
 
-    p {
+    p, a {
       font-size: 1.15em;
       line-height: 1.6em;
       color: #333;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    a {
+      font-weight: normal;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
     ul {
@@ -78,16 +87,6 @@
       transform: translateY(-5px);
     }
 
-    a {
-      color: #333;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
     .skills-column {
       display: flex;
       justify-content: space-between;
@@ -99,18 +98,19 @@
       margin-bottom: 20px;
     }
 
+    /* Certificados em coluna */
     .certificates {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
+      flex-direction: column; /* um embaixo do outro */
+      align-items: center;
+      gap: 20px;
       margin-top: 20px;
     }
 
     .certificates img {
-      width: 140px;
-      height: 180px;
-      object-fit: cover;
+      width: 400px;  /* tamanho médio */
+      height: auto;
+      object-fit: contain;
       border-radius: 10px;
       border: 2px solid rgba(0,0,0,0.1);
       box-shadow: 0 4px 15px rgba(0,0,0,0.05);
@@ -118,7 +118,7 @@
 
     @media(max-width: 700px){
       .skills-box { flex: 0 0 100%; }
-      .certificates img { width: 45%; height: auto; }
+      .certificates img { width: 90%; }
     }
 
   </style>
@@ -126,7 +126,7 @@
 <body>
 
   <!-- FOTO -->
-  <img src="foto.jpg" alt="Foto Maria Clara Avanci">
+  <img class="profile" src="foto.jpg" alt="Foto Maria Clara Avanci">
 
   <!-- NOME -->
   <h1>Maria Clara Avanci</h1>
@@ -173,11 +173,12 @@
   <div class="box">
     <h2>Algumas das minhas certificações</h2>
     <div class="certificates">
-      <img src="ESTRATÉGIA_EMPRESARIAL_NA_GESTÃO_DAS_ORGANIZAÇÕES_(CURSO_GRATUITO)-Declaração_30885_page-0001.jpg" alt="Certificação 1">
-      <img src="Certificado.jpg.jpeg" alt="Certificação 2">
-      <img src="39791867df150f8c649f185e2af36dcc.png.jpeg" alt="Certificação 3">
-      <img src="Certificado.jpg" alt="Certificação 4">
-      <!-- se quiser adicionar a quinta, coloque aqui -->
+      <!-- renomeie seu arquivo no repositório para certificado1.jpg -->
+      <img src="certificado1.jpg" alt="Certificação 1">
+      <img src="Certificado2.jpg" alt="Certificação 2">
+      <img src="Certificado3.jpg" alt="Certificação 3">
+      <img src="Certificado4.jpg" alt="Certificação 4">
+      <img src="Certificado5.jpg" alt="Certificação 5">
     </div>
   </div>
 
@@ -189,4 +190,3 @@
 
 </body>
 </html>
-     
