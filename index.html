@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfólio Maria</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #0f3d91, #1e5bb8); /* Azul estilo Vercel */
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      padding: 50px 20px;
+      margin: 0;
+    }
 
+    /* Foto principal */
+    img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #ffffffaa;
+      margin-bottom: 20px;
+    }
+
+    /* Certificados */
+    .certificados img {
+      width: 200px;
+      margin: 10px;
+      border-radius: 10px;
+      border: 2px solid #ffffffaa;
+    }
+
+    h1 { font-size: 2.5em; margin-bottom: 5px; }
+    h2 { font-size: 1.5em; margin-bottom: 10px; margin-top: 30px; text-decoration: underline; }
+    p { font-size: 1.1em; line-height: 1.6em; }
+
+    .box {
+      background-color: rgba(255,255,255,0.1);
+      padding: 25px;
+      border-radius: 15px;
+      margin: 20px auto;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- FOTO -->
+  <img src="foto.jpg" alt="Foto Maria">
+
+  <!-- NOME E IDADE -->
+  <h1>Maria, 19 anos</h1>
+  <p>Graduanda em Análise e Desenvolvimento de Sistemas e Engenharia de Software</p>
+
+  <!-- SOBRE MIM -->
+  <div class="box">
+    <h2>Sobre Mim</h2>
+    <p>
+      Olá! Meu nome é Maria, tenho 19 anos e sou graduanda em Análise e Desenvolvimento de Sistemas e Engenharia de Software.  
+      Sou entusiasta na área de tecnologia e sempre disposta a <strong>aprimorar meus conhecimentos</strong> e aplicar novas soluções em projetos de software.
+    </p>
+  </div>
+
+  <!-- CERTIFICADOS -->
+  <div class="box certificados">
+    <h2>Meus Certificados</h2>
+    <img src="cert1.jpg" alt="Certificado 1">
+    <img src="cert2.jpg" alt="Certificado 2">
+    <img src="cert3.jpg" alt="Certificado 3">
+  </div>
+
+  <!-- CONTATO -->
+  <div class="box">
+    <h2>Contato</h2>
+    <p>Email: seuemail@email.com</p>
+  </div>
+
+</body>
+</html>
